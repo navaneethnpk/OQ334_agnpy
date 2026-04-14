@@ -1,0 +1,19 @@
+2026-04-14 22:57:12 - INFO - ======================================================================  Epoch_Q1_01
+2026-04-14 22:57:12 - INFO - Reading the SED file ...
+2026-04-14 22:57:12 - WARNING - No reference model set for FluxMaps. Assuming point source with E^-2 spectrum.
+2026-04-14 22:57:12 - WARNING - No reference model set for FluxMaps. Assuming point source with E^-2 spectrum.
+2026-04-14 22:57:12 - WARNING - No reference model set for FluxMaps. Assuming point source with E^-2 spectrum.
+2026-04-14 22:57:12 - WARNING - No reference model set for FluxMaps. Assuming point source with E^-2 spectrum.
+2026-04-14 22:57:12 - WARNING - No reference model set for FluxMaps. Assuming point source with E^-2 spectrum.
+2026-04-14 22:57:12 - INFO - Found 2 model variation(s)
+2026-04-14 22:57:12 - INFO - Creating EC Model 1: default
+2026-04-14 22:57:12 - INFO -   Overrides: {}
+2026-04-14 22:57:12 - INFO - Loaded params [config]:
+{'source': {'name': 'OQ 334', 'z': 0.682}, 'eed': {'k': 0.0005082843583508282, 'p1': 2.139994244880327, 'p2': 4.158678373358355, 'gamma_b': 8604.739738544593, 'gamma_min': 10, 'gamma_max': 100000.0}, 'blob': {'Gamma': 30.0, 'delta_D': 23.750192556674445, 'B': 0.22782535450328217, 't_var': 9.0, 'r': '6.0e17'}, 'disk': {'L_disk': '2.0e45', 'M_BH': '4.0e8', 'eta': 0.0833333, 'R_in': 6.0, 'R_out': '1.0e3'}, 'blr': {'xi_line': 0.1}, 'dt': {'xi_dt': 0.1, 'T_dt': 1000}}
+2026-04-14 22:57:12 - INFO - Creating EC Model 2: model-1
+2026-04-14 22:57:12 - INFO -   Overrides: {'disk': {'L_disk': '2.0e46'}, 'blob': {'B': 0.2, 'r': '3.0e18', 'delta_D': 20.0}, 'eed': {'k': 0.0006, 'p1': 2.0, 'gamma_b': 9000.0, 'gamma_max': 20000.0}}
+2026-04-14 22:57:12 - INFO - Loaded params [config]:
+{'source': {'name': 'OQ 334', 'z': 0.682}, 'eed': {'k': 0.0006, 'p1': 2.0, 'p2': 4.158678373358355, 'gamma_b': 9000.0, 'gamma_min': 10, 'gamma_max': 20000.0}, 'blob': {'Gamma': 30.0, 'delta_D': 20.0, 'B': 0.2, 't_var': 9.0, 'r': '3.0e18'}, 'disk': {'L_disk': '2.0e46', 'M_BH': '4.0e8', 'eta': 0.0833333, 'R_in': 6.0, 'R_out': '1.0e3'}, 'blr': {'xi_line': 0.1}, 'dt': {'xi_dt': 0.1, 'T_dt': 1000}}
+2026-04-14 22:57:12 - INFO - Saving combined SED plot with all models ...
+2026-04-14 22:58:10 - INFO - Done.
+

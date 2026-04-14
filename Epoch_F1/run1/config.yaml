@@ -1,0 +1,41 @@
+# OQ 334 SED fitting configuration - Epoch_F1
+
+source:
+  name: "OQ 334"
+  z: 0.682
+
+eed:
+  k: 0.000508
+  p1: 2.139
+  p2: 4.158
+  gamma_b: 8604.7 
+  gamma_min: 100
+  gamma_max: 90000.0
+
+
+blob:
+  Gamma: 30.0             # bulk Lorentz factor
+  delta_D: 22.0           # Doppler factor
+  B: 0.35                 # magnetic field [G]
+  t_var: 9.0              # variability timescale [hours]
+  r: 1.0e18               # distance from the base of the jet [cm]
+
+disk:
+  L_disk: 2.0e46          # disk luminosity [erg/s]
+  M_BH: 4.0e8             # black hole mass [solar masses]
+  eta: 0.0833333          # 1/12 accretion efficiency
+  R_in: 6.0               # inner radius [R_g]
+  R_out: 1.0e3            # outer radius [R_g]
+
+blr:
+  xi_line: 0.1            # fraction of disk luminosity reprocessed
+  R_line: null            #
+
+dt:
+  xi_dt: 0.1              # fraction of disk luminosity reprocessed
+  T_dt: 1.0e3             # dust temperature [K]
+  R_dt: null              # 
+
+frozen:
+  t_var: true
+  log10_r: true

@@ -1,0 +1,48 @@
+# OQ 334 SED fitting configuration
+
+source:
+  name: "OQ 334"
+  z: 0.682
+
+# Default/Main configuration
+defaults:
+  eed:
+    k: 0.0005082843583508282
+    p1: 2.139994244880327
+    p2: 4.158678373358355
+    gamma_b: 8604.739738544593 
+    gamma_min: 10
+    gamma_max: 100000.0
+  blob:
+    Gamma: 30.0
+    delta_D: 23.750192556674445
+    B: 0.22782535450328217
+    t_var: 9.0
+    r: 6.0e17
+  disk:
+    L_disk: 2.0e45
+    M_BH: 4.0e8
+    eta: 0.0833333
+    R_in: 6.0
+    R_out: 1.0e3
+  blr:
+    xi_line: 0.1
+  dt:
+    xi_dt: 0.1
+    T_dt: 1000
+
+# Model variations - only specify parameters that differ from defaults
+models:
+  - label: "default"
+    # No overrides - uses all defaults
+
+  - label: "model-1"
+    disk:
+      L_disk: 2.0e46
+    blob:
+      B: 0.3
+      r: 1.0e18
+    eed:
+      k: 0.0006
+      p1: 2.0
+      gamma_b: 9000.0
