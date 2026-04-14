@@ -1,6 +1,6 @@
 ### agnpy SED Modeling - OQ 334
 
-#### run_agnpy.py:
+#### `run_agnpy.py`:
 
 **Structure**
 ```
