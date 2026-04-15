@@ -1,0 +1,57 @@
+2026-04-14 23:12:54 - INFO - ============================================================  Epoch_F1/run1
+2026-04-14 23:12:54 - INFO - Making the EC Model ...
+2026-04-14 23:12:54 - INFO - 
+ type       name         value      unit     error      min        max    frozen is_norm link prior
+---- --------------- ----------- -------- --------- ---------- --------- ------ ------- ---- -----
+             log10_k -3.2941e+00          0.000e+00 -1.000e+01 1.000e+01  False   False           
+                  p1  2.1390e+00          0.000e+00  1.000e+00 5.000e+00  False   False           
+                  p2  4.1580e+00          0.000e+00  1.000e+00 5.000e+00  False   False           
+       log10_gamma_b  3.9347e+00          0.000e+00  2.000e+00 6.000e+00  False   False           
+     log10_gamma_min  2.0000e+00          0.000e+00  0.000e+00 4.000e+00   True   False           
+     log10_gamma_max  4.9542e+00          0.000e+00  4.000e+00 8.000e+00   True   False           
+                   z  6.8200e-01          0.000e+00  1.000e-03 1.000e+01   True   False           
+             delta_D  2.2000e+01          0.000e+00  1.000e+00 1.000e+02  False   False           
+             log10_B -4.5593e-01          0.000e+00 -4.000e+00 2.000e+00  False   False           
+               t_var  3.2400e+04        s 0.000e+00  1.000e+01 3.142e+07   True   False           
+                mu_s  9.9904e-01          0.000e+00  0.000e+00 1.000e+00   True   False           
+             log10_r  1.8000e+01          0.000e+00  1.600e+01 2.200e+01   True   False           
+        log10_L_disk  4.6301e+01          0.000e+00  4.200e+01 4.800e+01   True   False           
+                M_BH  7.9536e+41        g 0.000e+00  1.000e+32 1.000e+45   True   False           
+               m_dot  2.6704e+26    g s-1 0.000e+00  1.000e+24 1.000e+30   True   False           
+                R_in  3.5439e+14       cm 0.000e+00  1.000e+12 1.000e+16   True   False           
+               R_out  5.9065e+16       cm 0.000e+00  1.000e+12 1.000e+19   True   False           
+             xi_line  1.0000e-01          0.000e+00  0.000e+00 1.000e+00   True   False           
+         lambda_line  1.2157e+03 Angstrom 0.000e+00  9.000e+02 7.000e+03   True   False           
+              R_line  4.4721e+17       cm 0.000e+00  1.000e+16 1.000e+18   True   False           
+               xi_dt  1.0000e-01          0.000e+00  0.000e+00 1.000e+00   True   False           
+                T_dt  1.0000e+03        K 0.000e+00  1.000e+02 1.000e+04   True   False           
+                R_dt  1.1180e+19       cm 0.000e+00  1.000e+17 1.000e+20   True   False           
+                norm  1.0000e+00          0.000e+00  1.000e-01 1.000e+01   True    True           
+2026-04-14 23:12:54 - INFO - Reading the SED file ...
+2026-04-14 23:12:54 - WARNING - No reference model set for FluxMaps. Assuming point source with E^-2 spectrum.
+2026-04-14 23:12:54 - WARNING - No reference model set for FluxMaps. Assuming point source with E^-2 spectrum.
+2026-04-14 23:12:54 - WARNING - No reference model set for FluxMaps. Assuming point source with E^-2 spectrum.
+2026-04-14 23:12:54 - WARNING - No reference model set for FluxMaps. Assuming point source with E^-2 spectrum.
+2026-04-14 23:12:54 - WARNING - No reference model set for FluxMaps. Assuming point source with E^-2 spectrum.
+2026-04-14 23:12:55 - INFO - Saving pre-fit SED ...
+2026-04-14 23:13:11 - INFO - Running fit ...
+2026-04-15 00:28:03 - INFO - 
+ OptimizeResult
+
+	backend    : minuit
+	method     : migrad
+	success    : False
+	message    : Optimization failed. Call limit was reached.
+	nfev       : 1275
+	total stat : 46820.39
+
+CovarianceResult
+
+	backend    : minuit
+	method     : hesse
+	success    : True
+	message    : Hesse terminated successfully.
+
+2026-04-15 00:28:03 - INFO - Saving fit outputs ...
+2026-04-15 00:29:06 - INFO - Done.
+

@@ -1,0 +1,15 @@
+OptimizeResult
+
+	backend    : minuit
+	method     : migrad
+	success    : False
+	message    : Optimization failed. Call limit was reached.
+	nfev       : 990
+	total stat : 17821.24
+
+CovarianceResult
+
+	backend    : minuit
+	method     : hesse
+	success    : True
+	message    : Hesse terminated successfully.
