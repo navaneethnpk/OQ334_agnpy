@@ -177,15 +177,15 @@ def make_model(cfg, ec_components, backend="gammapy"):
     for param_name, frozen in frozen_dict.items():
         ec_model.parameters[f"{param_name}"].frozen = frozen
 
-    # bounds_dict = cfg.get("bounds") or {}
-    # for param_name, bounds in bounds_dict.items():
-    #     param = ec_model.parameters[param_name]
-    #     if param_name.startswith("log10_"):
-    #         param.min = np.log(float(bounds["min"]))
-    #         param.max = np.log(float(bounds["max"]))
-    #     else:
-    #         param.min = float(bounds["min"])
-    #         param.max = float(bounds["max"])
+    bounds_dict = cfg.get("bounds") or {}
+    for param_name, bounds in bounds_dict.items():
+        param = ec_model.parameters[param_name]
+        if param_name.startswith("log10_"):
+            param.min = np.log10(float(bounds["min"]))
+            param.max = np.log10(float(bounds["max"]))
+        else:
+            param.min = float(bounds["min"])
+            param.max = float(bounds["max"])
 
     return ec_model
 
@@ -193,7 +193,7 @@ def load_data(sed_file):
     """Load flux-point datasets with energy cuts and systematic uncertainties."""
     systematics = {
         "MAGIC":     0.30,
-        "Fermi-LAT": 0.10,
+        "LAT": 0.10,
         "XRT":       0.10,
         "UVOT":      0.05,
     }
